@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>starbucks website landing page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#"><img src="logo.png" class="logo"></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="whatsnew.html">What's new</a></li>
+				<li><a href="about.html">Contact</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+			 <h2> <span>Royal Cafe<span></h2>
+			 <p><b>Coffee, the clear choice.</b></p>
+		<a href="#">Order Now</a>
+		</div>
+		<div class="imgBox">
+		<img src="img1.png" class="starbucks">	
+		</div>
+		</div>
+			<ul class="thumb">
+				<li><img src="img1.png" onclick="imgSlider('img1.png');changeCircleColor('#4d2600')"></li>
+				<li><img src="img2.png" onclick="imgSlider('img2.png');changeCircleColor('#4d2600')"></li>
+				<li><img src="img3.png" onclick="imgSlider('img3.png');changeCircleColor('#4d2600')"></li>
+				<li><img src="img4.png" onclick="imgSlider('img4.png');changeCircleColor('#4d2600')"></li>
+			</ul>
+			<ul class="sci">
+				<li><a href="#"><img src="facebook.png"></a></li>
+				<li><a href="#"><img src="twitter.png"></a></li>
+				<li><a href="#"><img src="instagram.png"></a></li>
+			</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.starbucks').src = anything;
+		}
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+	</script>
+</body>
+</html>
